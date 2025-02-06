@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+main {
+    height: 80vh;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.flex{
+    display: flex;
+} 
+
+.Btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ad1700 ;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+
+}
+h2.titulo span{
+    color: #ad1700;
+
+}
+/* estilo do cabecalho*/
+header{
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}  
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.Btn-contato button:hover {
+    box-shadow: 0px 0px 8px #ffffff;
+    transform: scale(1.05);
+}
+/*Estilo do topo do site*/
+section.topo-do-site{
+    padding: 40px 4%;
+    margin-top: 10rem;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site .txt-topo-site h1{
+    color: #fff;
+    font-size: 42px;
+
+}
+.topo-do-site h1 span{
+    color: #ad1700;
+}
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.testimonial-content p{
+    color: var(--color-neutral-30);
+}
+.cta-section p {
+    color: var(--color-neutral-30);
+    font-size: 14px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 56.25%; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 2px 2px 10px #ad1700;
+    border-radius: 5px;
+}
+
+.content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+.cta-section {
+    text-align: center;
+    background-color: #000; 
+    color: #fff; 
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ad1700 ;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cta-button:hover {
+    box-shadow: 0px 0px 8px #ffffff;
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Avaliações do curso*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
+    font-size: 0.55rem;
+
+}
+
+.card{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px #ad1700;
+}
+
+.card .user {
+    width: 100px;
+
+}
+
+.star{
+    width: 20px;
+
+}
+
+
+.resultados {
+    color: var(--color-neutral-30);
+    font-size: 0.55rem;
+
+}
+
+footer {
+    font-size: 0.55rem;
+    width: 100%;
+    color: var(--color-neutral-40);
+    
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_contacts p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.5; 
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.9rem 1.0rem; 
+   
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #ad1700;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #ad1700;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1rem;
+    font-size: 1.10rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.45rem;
+    padding: 1rem; 
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.payclass {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.currency {
+    font-size: 20px;
+}
+
+.amount {
+    font-size: 50px;
+}
+
+.benefits {
+    list-style: none;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 320px;
+}
+
+.benefits li {
+    font-size: 16px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.benefits li::before {
+    content: "✔";
+    color: #fc5d5d;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.renew {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.cta {
+    background: linear-gradient(90deg, #ffffff, #c0c0c0);
+    color: #000;
+    font-size: 16px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta:hover {
+    background: linear-gradient(90deg, #c0c0c0, #ffffff);
+    transform: scale(1.05);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: start;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.option input {
+    accent-color: var(--button-color);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.option span {
+    flex: 1;
+}
+
+#checkboxes {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    text-align: center;
+    margin-top: 8rem;
+    max-width: 800px; 
+    padding: 3.5rem;
+    width: 90%; 
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.option {
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+    max-width: 1000px; 
+    padding: 15px 50;
+    font-size: 1.2rem; 
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.option input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.option input[type="checkbox"]:checked {
+    background: #ad1700;
+    border-color: #ad1700;
+}
+
+.option input[type="checkbox"]:checked::after {
+    content: "✔";
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
